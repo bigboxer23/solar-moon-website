@@ -3,18 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
+	AiOutlineHome, AiOutlineLogin, AiFillBank
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import {MdOutlineDashboard} from "react-icons/md";
+import {BsDatabase} from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -58,59 +52,47 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
+            {/*<Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Testimonials
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item>*/}
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiFillBank
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Pricing
               </Nav.Link>
             </Nav.Item>
 
+	          <Nav.Item>
+		          <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/dashboards#/view/98caee10-06d9-11ee-aaed-cb787020bc35">
+			          <MdOutlineDashboard style={{ marginBottom: "2px" }} /> Dashboards
+		          </Nav.Link>
+	          </Nav.Item>
+	          <Nav.Item>
+		          <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/discover#/view/796113f0-06d5-11ee-aaed-cb787020bc35">
+			          <BsDatabase style={{ marginBottom: "2px" }} /> Data
+		          </Nav.Link>
+	          </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineLogin style={{ marginBottom: "2px" }} /> Sign up /Sign In
               </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
