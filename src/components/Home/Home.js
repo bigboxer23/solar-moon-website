@@ -11,8 +11,8 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-	      <Particle/>
-	      <Container className="home-content">
+        <Particle />
+        <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -20,7 +20,8 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                Our platform empowers businesses to efficiently manage all their solar energy devices with:
+                Our platform empowers businesses to efficiently manage all their
+                solar energy devices with:
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
@@ -36,12 +37,18 @@ function Home() {
               />
             </Col>
           </Row>
-	        <Row>	    <Features/>
-	        </Row>
-		      <Row>     <Home2 />
-		      </Row>
-		      <Row> <Github />
-		      </Row>
+          <Row>
+            {" "}
+            <Features />
+          </Row>
+          <Row>
+            {" "}
+            <Home2 />
+          </Row>
+          <Row>
+            {" "}
+            <Github />
+          </Row>
         </Container>
       </Container>
     </section>

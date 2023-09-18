@@ -160,7 +160,7 @@ button:focus {
 }
 
 .logo-2 {
-	width: 2em !important;
+  width: 2em !important;
 }
 .navbar-nav .nav-link {
   color: white !important;
@@ -509,9 +509,9 @@ button:focus {
 
 .card-img-top {
   padding: 30px 75px;
-	margin-top:20px;
+  margin-top: 20px;
   /*opacity: 0.8 !important;*/
- /* border-radius: 10px !important;*/
+  /* border-radius: 10px !important;*/
 }
 
 .blog-img {

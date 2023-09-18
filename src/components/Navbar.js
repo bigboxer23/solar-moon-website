@@ -4,11 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.svg";
 import { Link } from "react-router-dom";
-import {
-	AiOutlineHome, AiOutlineLogin, AiFillBank
-} from "react-icons/ai";
-import {MdOutlineDashboard} from "react-icons/md";
-import {BsDatabase} from "react-icons/bs";
+import { AiOutlineHome, AiOutlineLogin, AiFillBank } from "react-icons/ai";
+import { MdOutlineDashboard } from "react-icons/md";
+import { BsDatabase } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -63,35 +61,30 @@ function NavBar() {
             </Nav.Item>*/}
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiFillBank
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Pricing
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiFillBank style={{ marginBottom: "2px" }} /> Pricing
               </Nav.Link>
             </Nav.Item>
 
-	          <Nav.Item>
-		          <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/dashboards#/view/98caee10-06d9-11ee-aaed-cb787020bc35">
-			          <MdOutlineDashboard style={{ marginBottom: "2px" }} /> Dashboards
-		          </Nav.Link>
-	          </Nav.Item>
-	          <Nav.Item>
-		          <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/discover#/view/796113f0-06d5-11ee-aaed-cb787020bc35">
-			          <BsDatabase style={{ marginBottom: "2px" }} /> Data
-		          </Nav.Link>
-	          </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/dashboards#/view/98caee10-06d9-11ee-aaed-cb787020bc35">
+                <MdOutlineDashboard style={{ marginBottom: "2px" }} />{" "}
+                Dashboards
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/discover#/view/796113f0-06d5-11ee-aaed-cb787020bc35">
+                <BsDatabase style={{ marginBottom: "2px" }} /> Data
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineLogin style={{ marginBottom: "2px" }} /> Sign up /Sign In
+                <AiOutlineLogin style={{ marginBottom: "2px" }} /> Sign up /Sign
+                In
               </Nav.Link>
             </Nav.Item>
           </Nav>

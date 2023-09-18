@@ -16,8 +16,10 @@ function Home2() {
               About <span className="purple"> Solar Moon Analytics</span>
             </h1>
             <p className="home-about-body">
-	            We are a Minneapolis, MN based software development firm passionate about clean energy.  We leverage the power
-	            of data and AI to provide best in class tools for helping generating ROI from your solar energy devices.
+              We are a Minneapolis, MN based software development firm
+              passionate about clean energy. We leverage the power of data and
+              AI to provide best in class tools for helping generating ROI from
+              your solar energy devices.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
