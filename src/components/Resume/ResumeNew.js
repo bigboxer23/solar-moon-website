@@ -16,17 +16,11 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative" }}></Row>
 
-        </Row>
+        <Row className="resume"></Row>
 
-        <Row className="resume">
-
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-
-        </Row>
+        <Row style={{ justifyContent: "center", position: "relative" }}></Row>
       </Container>
     </div>
   );

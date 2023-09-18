@@ -6,9 +6,10 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Analytics",
-          "Historical Data",
-          "Alerting",
+          "Real-time Analytics",
+          "Historic Data",
+          "Multi-channel Alerting",
+          "Advanced Reporting",
           "Intelligence",
         ],
         autoStart: true,

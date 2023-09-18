@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import Projects from "../Projects/Projects";
+import Features from "../Features/Features";
+import Github from "../About/Github";
 
 function Home2() {
   return (
@@ -10,10 +13,13 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> INTRODUCING </span> Solar Moon
+              About <span className="purple"> Solar Moon Analytics</span>
             </h1>
             <p className="home-about-body">
-	            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              We are a Minneapolis, MN based software development firm
+              passionate about clean energy. We leverage the power of data and
+              AI to provide best in class tools for helping generating ROI from
+              your solar energy devices.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
