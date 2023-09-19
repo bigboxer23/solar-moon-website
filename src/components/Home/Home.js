@@ -16,12 +16,12 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Welcome to Solar Moon Analytics!{" "}
+                Welcome to Solar Moon Analytics!
               </h1>
-
               <h1 className="heading-name">
-                Our platform empowers businesses to efficiently manage all their
-                solar energy devices with:
+                Our platform empowers businesses to seamlessly oversee their
+                solar energy infrastructure, offering an array of indispensable
+                features, including:
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />

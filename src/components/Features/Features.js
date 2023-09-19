@@ -27,7 +27,9 @@ function Features() {
               imgPath={aggregation}
               isBlog={false}
               title="Aggregation"
-              description="Manage multiple devices grouped together into virtual sites, all on one dashboard."
+              description="Our system provides the capability to manage a multitude of devices seamlessly.
+              You can group devices together into virtual sites, allowing you to organize them logically and efficiently.
+              All these devices and virtual sites are accessible through a single, unified dashboard. This central hub simplifies your management tasks."
             />
           </Col>
 
@@ -36,7 +38,7 @@ function Features() {
               imgPath={configurable}
               isBlog={false}
               title="Configurability"
-              description="Dashboards are flexible enough to scale down to individual devices, or can show whole fleets of devices. Virtual devices allow rolled up views of specific clusters or sites."
+              description="Our dashboards are highly flexible. They can be tailored them to meet your specific needs, whether you want to monitor individual devices, or specific clusters/sites. Virtual devices provide aggregated views of specific clusters or sites. This feature simplifies the monitoring of complex networks."
             />
           </Col>
 
@@ -45,7 +47,7 @@ function Features() {
               imgPath={dataView}
               isBlog={false}
               title="Live Data View"
-              description="Explore live data from all devices in a tabular format."
+              description="You can explore live data from all your devices in a tabular format. This real-time view allows you to monitor the current status and performance of your devices."
             />
           </Col>
           <Col md={4} className="project-card">
@@ -53,7 +55,7 @@ function Features() {
               imgPath={exportData}
               isBlog={false}
               title="Historic Data Export"
-              description="Export historic data from user defined time periods."
+              description="Our system allows you to export historic data from user-defined time periods. This feature is valuable for analysis, compliance reporting, and decision-making."
             />
           </Col>
           <Col md={4} className="project-card">
@@ -61,7 +63,7 @@ function Features() {
               imgPath={alerting}
               isBlog={false}
               title="Alerting"
-              description="Alerting via e-mail or text message when device anomalies are detected. User configurable thresholds for messaging can be set."
+              description="Receive timely alerts via email or text message when our system detects anomalies or irregularities in device behavior. Customize alert thresholds to match your specific requirements. This ensures that you're only notified when deviations from normal operation warrant attention."
             />
           </Col>
           <Col md={4} className="project-card">
@@ -69,7 +71,7 @@ function Features() {
               imgPath={reporting}
               isBlog={false}
               title="Reporting"
-              description="Emailed digests of device information can be sent out at a regular cadence to show ROI of systems."
+              description="Our system can automatically generate and send emailed digests of device information at regular intervals. These reports include key data points and insights, helping you track the return on investment (ROI) of your systems. This feature enables you to assess the efficiency and profitability of your device network."
             />
           </Col>
         </Row>
