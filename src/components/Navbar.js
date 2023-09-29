@@ -10,7 +10,7 @@ import { BsDatabase } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [navColor, updateNavbar] = useState(false);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -27,7 +27,7 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={navColor ? "sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
@@ -50,37 +50,15 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-            {/*<Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Testimonials
-              </Nav.Link>
-            </Nav.Item>*/}
-
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiFillBank style={{ marginBottom: "2px" }} /> Pricing
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/dashboards#/view/98caee10-06d9-11ee-aaed-cb787020bc35">
-                <MdOutlineDashboard style={{ marginBottom: "2px" }} />{" "}
-                Dashboards
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="https://dashboard.solarmoonanalytics.com/_dashboards/app/discover#/view/796113f0-06d5-11ee-aaed-cb787020bc35">
-                <BsDatabase style={{ marginBottom: "2px" }} /> Data
-              </Nav.Link>
-            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="https://app.solarmoonanalytics.com"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineLogin style={{ marginBottom: "2px" }} /> Sign up /Sign
