@@ -44,7 +44,7 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto w-100" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -55,6 +55,7 @@ function NavBar() {
                 <AiFillBank style={{ marginBottom: "2px" }} /> Pricing
               </Nav.Link>
             </Nav.Item>
+            <div className={"flex-grow-1"}></div>
             <Nav.Item>
               <Nav.Link
                 as={Link}
