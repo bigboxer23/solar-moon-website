@@ -50,11 +50,11 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiFillBank style={{ marginBottom: "2px" }} /> Pricing
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item>*/}
             <div className={"flex-grow-1"}></div>
             <Nav.Item>
               <Nav.Link
