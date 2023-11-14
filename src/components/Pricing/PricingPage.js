@@ -12,7 +12,7 @@ function PricingPage() {
   };
 
   return (
-    <div className={"root-page  container min-vh-95"}>
+    <div className={"root-page  container min-vh-88"}>
       <div className={"d-flex ps-5"}>
         <div className={"h2 p-4"}>
           Choose a <span className="purple">Plan</span>
