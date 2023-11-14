@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
-import { MdLogin } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

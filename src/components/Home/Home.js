@@ -2,10 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Type from "./Type";
-import Home2 from "./Home2";
 import Features from "../Features/Features";
 import Particle from "../Particle";
-import Github from "../About/Github";
 import Tilt from "react-parallax-tilt";
 
 function Home() {
