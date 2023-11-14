@@ -3,10 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.svg";
-import { Link } from "react-router-dom";
-import { AiOutlineHome, AiOutlineLogin, AiFillBank } from "react-icons/ai";
-import { MdOutlineDashboard } from "react-icons/md";
-import { BsDatabase } from "react-icons/bs";
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -30,8 +27,13 @@ function NavBar() {
       className={navColor ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className={"d-flex align-items-center me-4"}
+        >
           <img src={logo} className="img-fluid logo" alt="brand" />
+          <div className={"ms-2 fs-4"}>Solar Moon Analytics</div>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -46,15 +48,32 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto w-100" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
+              <NavLink
+                to="/docs"
+                className={"text-nowrap nav-link"}
+                onClick={() => updateExpanded(false)}
+              >
+                Docs
+              </NavLink>
             </Nav.Item>
-            {/* <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiFillBank style={{ marginBottom: "2px" }} /> Pricing
-              </Nav.Link>
-            </Nav.Item>*/}
+            <Nav.Item>
+              <NavLink
+                to="/pricing"
+                className={"text-nowrap nav-link"}
+                onClick={() => updateExpanded(false)}
+              >
+                Pricing
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink
+                to="/about"
+                className={"text-nowrap nav-link"}
+                onClick={() => updateExpanded(false)}
+              >
+                About
+              </NavLink>
+            </Nav.Item>
             <div className={"flex-grow-1"}></div>
             <Nav.Item>
               <Nav.Link
@@ -62,8 +81,7 @@ function NavBar() {
                 to="https://app.solarmoonanalytics.com"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineLogin style={{ marginBottom: "2px" }} /> Sign up /Sign
-                In
+                Sign up /Sign In
               </Nav.Link>
             </Nav.Item>
           </Nav>
