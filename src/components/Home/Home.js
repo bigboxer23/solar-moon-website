@@ -6,52 +6,43 @@ import Home2 from "./Home2";
 import Features from "../Features/Features";
 import Particle from "../Particle";
 import Github from "../About/Github";
+import Tilt from "react-parallax-tilt";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Welcome to Solar Moon Analytics!
-              </h1>
-              <h1 className="heading-name">
-                Our platform empowers businesses to seamlessly oversee their
-                solar energy infrastructure, offering an array of indispensable
-                features, including:
-              </h1>
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-            </Col>
+    <Container fluid className="home-section">
+      <Particle />
+      <Container className="home-content">
+        <Row>
+          <Col md={7} className="home-header">
+            <h1 className={"heading mb-4"}>Welcome to Solar Moon Analytics!</h1>
+            <h2 className="heading-name">
+              Our platform empowers businesses to seamlessly oversee their solar
+              energy infrastructure, offering an array of indispensable
+              features, including:
+            </h2>
+            <div style={{ padding: 50, textAlign: "left" }}>
+              <Type />
+            </div>
+          </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+          <Col md={5} style={{ paddingBottom: 20 }}>
+            <Tilt>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "500px", height: "500px" }}
               />
-            </Col>
-          </Row>
-          <Row>
-            {" "}
-            <Features />
-          </Row>
-          <Row>
-            {" "}
-            <Home2 />
-          </Row>
-          <Row>
-            {" "}
-            <Github />
-          </Row>
-        </Container>
+            </Tilt>
+          </Col>
+        </Row>
+        <Row>
+          {" "}
+          <Features />
+        </Row>
       </Container>
-    </section>
+    </Container>
   );
 }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   let date = new Date();
@@ -16,20 +15,6 @@ function Footer() {
           <h3>
             Copyright © {year} {company}
           </h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/bigboxer23"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-          </ul>
         </Col>
       </Row>
     </Container>

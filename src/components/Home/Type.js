@@ -8,7 +8,7 @@ function Type() {
         strings: [
           "Real-time Analytics",
           "Historic Data",
-          "Multi-channel Alerting",
+          "Configurable Alerting",
           "Advanced Reporting",
           "Intelligence",
         ],
