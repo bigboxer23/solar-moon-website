@@ -1042,3 +1042,7 @@ button:focus {
 .active-alarm {
   background-color: var(--bs-danger);
 }
+
+.step-content {
+  margin-left: 28px;
+}
