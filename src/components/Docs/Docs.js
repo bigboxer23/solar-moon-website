@@ -117,7 +117,7 @@ function Docs() {
                   </ul>
                   <img
                     src={uploadChannel}
-                    className="img-fluid pe-4 pt-4"
+                    className="img-fluid pe-5 ps-3 pt-4"
                     alt="brand"
                   />
                 </div>
